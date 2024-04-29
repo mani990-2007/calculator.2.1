@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f1f1f1;
+    background: linear-gradient(135deg, #c533d8, #77d0f3);
     font-family: Arial, sans-serif;
 }
 
@@ -25,48 +25,43 @@ input[type="text"] {
     font-size: 1.5rem;
     border: none;
     border-radius: 5px;
-    color: #8ada91;
-    background-color: rgb(105, 105, 105);
+    color: #8ada91; /* رنگ متن داخل دیسپلی */
 }
 
 button {
     height: 50px;
     font-size: 1.2rem;
+    background: linear-gradient(135deg, #46bd78, #8ada91);
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
-    background: linear-gradient(135deg, #46bd78, #8ada91);
 }
 
 button:hover {
-    background: linear-gradient(135deg, #46bd78, #8ada91);
+    background: linear-gradient(135deg, #4f8cc9, #5c6fa6);
 }
 
 button:active {
-    background: linear-gradient(135deg, #26c1ff, #00b7ff);
     transform: scale(0.95);
 }
 
 .actions {
+    button {
+        background: linear-gradient(135deg, #ff7272, #ff6868);
+    }
     grid-column: span 4;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-}
-
-.actions button {
-    background: linear-gradient(135deg, #ff6868, #ff6868);
-}
-
-.actions button:hover {
-    background: linear-gradient(135deg, #ff6868, #ff6868);
-}
-
-.actions button:active {
-    background: linear-gradient(135deg, #ff3333, #ff3232);
-    transform: scale(0.95);
+    button:hover {
+        background: linear-gradient(135deg, #ff5454, #ff4141);
+    }
+    
+    button:active {
+        transform: scale(0.95);
+    }
 }
 
 .history {
